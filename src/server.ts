@@ -13,4 +13,12 @@ app.get('/users', (request, response) => {
     ]);
 });
 
+app.post('/users', (request, response) => {
+    const user = {
+        name: 'danilo',
+        email: 'email@email.com'
+    };
+    return response.json(user);
+});
+
 app.listen(3333)
